@@ -3,35 +3,29 @@ Given five positive integers, find the minimum and maximum values that can be ca
 five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
  */
 
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class MiniMaxSum {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    static void miniMaxSum(int[] arr) {
-        int min =arr[0];
-        int max =arr[0];
-        int sum=0;
-            for (int i = 1; i < arr.length; i++) {
-                if(arr[i]<min){
-                    min=arr[i];
-                }
-                if(arr[i]>max){
-                    max=arr[i];
-                }
-                sum+=arr[i];
+    static void miniMaxSum(long[] arr) {
+        long min = arr[0];
+        long max = arr[0];
+        long sum = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
             }
-            sum = sum+arr[0];
-            int sumMin = sum-min;
-            int sumMax=sum-max;
-        System.out.println(sumMin+" "+sumMax);
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+            sum += arr[i];
+        }
+        sum = sum + arr[0];
+        long sumMin = sum - min;
+        long sumMax = sum - max;
+        System.out.println(sumMax + " " + sumMin);
     }
 
     // Complete the miniMaxSum function below.
@@ -48,8 +42,8 @@ public class MiniMaxSum {
         }
 
         System.out.println();
-        int min=arr[0];
-        int max= arr[arr.length-1];
+        int min = arr[0];
+        int max = arr[arr.length - 1];
         int sumMin = 0;
         int sumMax = 0;
         for (int i = 1; i < arr.length; i++) {
@@ -60,11 +54,11 @@ public class MiniMaxSum {
             sumMin += arr[i];
 
         }
-        System.out.print(sumMin+" "+sumMax);
+        System.out.print(sumMin + " " + sumMax);
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[5];
+        long[] arr = new long[5];
 
         String[] arrItems = scanner.nextLine().split(" ");
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
@@ -74,7 +68,7 @@ public class MiniMaxSum {
             arr[i] = arrItem;
         }
 
-//        miniMaxSum(arr);
+//        miniMaxSum1(arr);
         miniMaxSum(arr);
 
         scanner.close();
