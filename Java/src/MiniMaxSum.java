@@ -13,13 +13,55 @@ import java.util.regex.*;
 
 public class MiniMaxSum {
 
-    // Complete the miniMaxSum function below.
+    private static final Scanner scanner = new Scanner(System.in);
+
     static void miniMaxSum(int[] arr) {
-
-
+        int min =arr[0];
+        int max =arr[0];
+        int sum=0;
+            for (int i = 1; i < arr.length; i++) {
+                if(arr[i]<min){
+                    min=arr[i];
+                }
+                if(arr[i]>max){
+                    max=arr[i];
+                }
+                sum+=arr[i];
+            }
+            sum = sum+arr[0];
+            int sumMin = sum-min;
+            int sumMax=sum-max;
+        System.out.println(sumMin+" "+sumMax);
     }
 
-    private static final Scanner scanner = new Scanner(System.in);
+    // Complete the miniMaxSum function below.
+    static void miniMaxSum1(int[] arr) {
+        int temp;
+        for (int i = 1; i < arr.length; i++) {
+            for (int j = i; j > 0; j--) {
+                if (arr[j] < arr[j - 1]) {
+                    temp = arr[j];
+                    arr[j] = arr[j - 1];
+                    arr[j - 1] = temp;
+                }
+            }
+        }
+
+        System.out.println();
+        int min=arr[0];
+        int max= arr[arr.length-1];
+        int sumMin = 0;
+        int sumMax = 0;
+        for (int i = 1; i < arr.length; i++) {
+            sumMax += arr[i];
+
+        }
+        for (int i = 0; i < arr.length - 1; i++) {
+            sumMin += arr[i];
+
+        }
+        System.out.print(sumMin+" "+sumMax);
+    }
 
     public static void main(String[] args) {
         int[] arr = new int[5];
@@ -32,6 +74,7 @@ public class MiniMaxSum {
             arr[i] = arrItem;
         }
 
+//        miniMaxSum(arr);
         miniMaxSum(arr);
 
         scanner.close();
