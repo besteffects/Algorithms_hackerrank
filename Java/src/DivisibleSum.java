@@ -27,23 +27,27 @@ Sample Output
  5
  */
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class DivisibleSum {
 
     // Complete the divisibleSumPairs function below.
-    static void divisibleSumPairs(int n, int k, int[] ar) {
-
-
+    static int divisibleSumPairs(int n, int k, int[] ar) {
+        int count = 0;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = i + 1; j < (ar.length); j++)
+                if ((ar[i] + ar[j]) % k == 0) {
+                    count++;
+                }
+        }
+        return count;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        // BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
         String[] nk = scanner.nextLine().split(" ");
         int n = Integer.parseInt(nk[0]);
         int k = Integer.parseInt(nk[1]);
@@ -58,14 +62,14 @@ public class DivisibleSum {
             ar[i] = arItem;
         }
 
-        // int result = divisibleSumPairs(n, k, ar);
+        int result = divisibleSumPairs(n, k, ar);
 
-        // bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
+        //  bufferedWriter.write(String.valueOf(result));
+        //  bufferedWriter.newLine();
 
-        bufferedWriter.close();
-
+        //  bufferedWriter.close();
         scanner.close();
+        System.out.println(result);
     }
 }
 
