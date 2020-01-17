@@ -5,11 +5,13 @@ public class Staircase1 {
     // Complete the staircase function below.
     static void staircase(int n) {
         StringBuilder builder = new StringBuilder();
+        //fill everything with " "
         for (int i = 0; i < n; i++) {
             builder.append(" ");
         }
 
         int j = 0;
+        //replace " " with #
         for (int i = 1; i <= n; i++) {
             builder.replace(builder.length() - i,
                     builder.length() - j, "#");
