@@ -1,5 +1,5 @@
-/*
-Alice wrote a sequence of words in CamelCase as a string of letters, s, having the following properties:
+package strings;/*
+Alice wrote a sequence of words in strings.CamelCase as a string of letters, s, having the following properties:
 
 - It is a concatenation of one or more words consisting of English letters.
 - All letters in the first word are lowercase.
