@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cbdc212-9ea2-4cbb-bfbd-a90cfa71a597" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/strings/ContainsString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strings/ContainsString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strings/TwoCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,15 +17,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BigSum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DivisibleSum.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -67,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/strings/ContainsString.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="141">
@@ -75,6 +67,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/strings/TwoCharacters.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="50" column="26" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -141,13 +142,15 @@
         <option value="$PROJECT_DIR$/src/CamelCase.java" />
         <option value="$PROJECT_DIR$/src/strings/CamelCase.java" />
         <option value="$PROJECT_DIR$/src/strings/ContainsString.java" />
+        <option value="$PROJECT_DIR$/src/strings/TwoCharacters.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="806" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="5" />
+    <option name="y" value="327" />
+    <option name="width" value="1435" />
+    <option name="height" value="504" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -268,10 +271,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="808" extended-state="6" />
+    <frame x="5" y="327" width="1435" height="504" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26752505" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15793252" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -280,7 +283,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962447" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2821229" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8632479" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39915967" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -410,6 +413,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/strings/TwoCharacters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="50" column="26" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="26" />
         </state>
       </provider>
     </entry>
