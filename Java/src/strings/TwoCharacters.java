@@ -48,40 +48,62 @@ Other cases are solved similarly.
 babab is the longest string we can create.
 
  */
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
+
+import java.io.IOException;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
 
 public class TwoCharacters {
 
     // Complete the alternate function below.
     static int alternate(String s) {
-        return 0;
+        Set<Character> char_set = new HashSet<Character>();
+
+        for (int i = 0; i < s.length(); i++) {
+            char_set.add(s.charAt(i));
+        }
+
+        Character[] char_arr = char_set.toArray(new Character[char_set.size()]);
+        int max = 0;
+
+        for (int j = 0; j < char_arr.length - 1; j++) {
+            for (int k = j + 1; k < char_arr.length; k++) {
+                String pattern = "([^" + char_arr[j] + char_arr[k] + "])";
+                String trimmedStr = s.replaceAll(pattern, "");
+                if (isTwoCharacter(trimmedStr) && trimmedStr.length() > max) {
+                    max = trimmedStr.length();
+                }
+            }
+        }
+        return max;
+    }
+
+    static boolean isTwoCharacter(String s) {
+        for (int i = 0; i < s.length() - 1; i++) {
+            if (s.charAt(i) == s.charAt(i + 1)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-Scanner scanner= new Scanner(System.in);
+        // BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        //  BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+        Scanner scanner = new Scanner(System.in);
 
-        int l = Integer.parseInt(bufferedReader.readLine().trim());
+        // int l = Integer.parseInt(bufferedReader.readLine().trim());
 
-        String s = bufferedReader.readLine();
-
+        // String s = bufferedReader.readLine();
+        //int q = scanner.nextInt();
+        String s = scanner.nextLine();
         int result = alternate(s);
+        System.out.println(result);
+        // bufferedWriter.write(String.valueOf(result));
+        //  bufferedWriter.newLine();
 
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
-
-        bufferedReader.close();
-        bufferedWriter.close();
+        //  bufferedReader.close();
+        //  bufferedWriter.close();
     }
 }
