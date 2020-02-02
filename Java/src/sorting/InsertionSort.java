@@ -53,36 +53,57 @@ In the 3-rd line ,4>3 so 4 is shifted one cell to the right.
 In the 4-th line ,2<3 so 3 is placed at position 1.
  */
 
-import java.util.*;
-
-
 public class InsertionSort {
 
     // Complete the insertionSort1 function below.
     static void insertionSort1(int n, int[] arr) {
 
+        int lastIndex = arr[arr.length - 1];
+
+        for (int i = arr.length - 2; i >= 0; i--) {
+            if (arr[i] > lastIndex) {
+                arr[i + 1] = arr[i];
+            }
+            if (arr[i] < lastIndex) {
+                arr[i + 1] = lastIndex;
+                break;
+            }
+            for (int a : arr) {
+                System.out.print(a + " ");
+            }
+            System.out.println();
+        }
+        if (arr[0] > lastIndex) {
+            arr[0] = lastIndex;
+        }
+
+        for (int a : arr) {
+            System.out.print(a + " ");
+        }
+        System.out.println();
 
     }
 
-    private static final Scanner scanner = new Scanner(System.in);
+
+    // private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int n = scanner.nextInt();
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+        // int n = scanner.nextInt();
+        // scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        int[] arr = new int[n];
+        //  int[] arr = new int[n];
 
-        String[] arrItems = scanner.nextLine().split(" ");
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+        //  String[] arrItems = scanner.nextLine().split(" ");
+        // scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        for (int i = 0; i < n; i++) {
-            int arrItem = Integer.parseInt(arrItems[i]);
-            arr[i] = arrItem;
-        }
+        // for (int i = 0; i < n; i++) {
+        //     int arrItem = Integer.parseInt(arrItems[i]);
+        //     arr[i] = arrItem;
+        //  }
 
-        insertionSort1(n, arr);
+        insertionSort1(5, new int[]{2, 4, 6, 8, 3});
 
-        scanner.close();
+        // scanner.close();
     }
 }
 
