@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cbdc212-9ea2-4cbb-bfbd-a90cfa71a597" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/sorting/InsertionSortTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithms_hackerrank/sorting/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithms_hackerrank/sorting/InsertionSort.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sorting/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/InsertionSort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,15 +19,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Staircase1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/strings/CamelCase.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -49,11 +43,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sorting/InsertionSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-165">
-              <caret line="70" column="31" lean-forward="true" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+            <state relative-caret-position="-1095">
+              <caret line="8" column="111" selection-start-line="8" selection-start-column="111" selection-end-line="8" selection-end-column="111" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sorting/InsertionSortTwo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="60" column="29" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -147,6 +150,7 @@
         <option value="$PROJECT_DIR$/src/strings/TwoCharacters.java" />
         <option value="$PROJECT_DIR$/src/sorting/SortingIntro.java" />
         <option value="$PROJECT_DIR$/src/sorting/InsertionSort.java" />
+        <option value="$PROJECT_DIR$/src/sorting/InsertionSortTwo.java" />
       </list>
     </option>
   </component>
@@ -295,7 +299,7 @@
     <frame x="0" y="23" width="1440" height="811" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10944206" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20171674" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -304,7 +308,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962447" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22531293" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.04172462" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39915967" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -459,8 +463,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sorting/InsertionSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="70" column="31" lean-forward="true" selection-start-line="70" selection-start-column="31" selection-end-line="70" selection-end-column="31" />
+        <state relative-caret-position="-1095">
+          <caret line="8" column="111" selection-start-line="8" selection-start-column="111" selection-end-line="8" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sorting/InsertionSortTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="29" />
         </state>
       </provider>
     </entry>

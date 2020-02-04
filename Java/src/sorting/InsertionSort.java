@@ -6,7 +6,7 @@ sorted by size. Since sorting is a simple problem with many different possible s
 Insertion Sort
 These challenges will cover Insertion Sort, a simple and intuitive sorting algorithm. We will first start with a nearly sorted list.
 Insert element into sorted list
-Given a sorted list with an unsorted number  in the rightmost cell, can you write some simple code to insert  into the array so that it remains sorted?
+Given a sorted list with an unsorted number e in the rightmost cell, can you write some simple code to insert e into the array so that it remains sorted?
 Since this is a learning exercise, it won't be the most efficient way of performing the insertion. It will instead demonstrate the brute-force method in detail.
 Assume you are given the array arr= |1,2,4,5,3| indexed 0...4. Store the value of arr|4|. Now test lower index values
 successively from 3 to 0 until you reach a value that is lower than arr|4|, arr|1| in this case. Each time your test fails,
