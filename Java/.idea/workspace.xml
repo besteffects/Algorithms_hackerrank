@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cbdc212-9ea2-4cbb-bfbd-a90cfa71a597" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/sorting/InsertionSortTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithms_hackerrank/sorting/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithms_hackerrank/sorting/InsertionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sorting/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sorting/InsertionSortTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/InsertionSortTwo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,8 +52,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sorting/InsertionSortTwo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="60" column="29" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="29" />
+            <state relative-caret-position="506">
+              <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -206,7 +206,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.InsertionSort">
+  <component name="RunManager" selected="Application.InsertionSortTwo">
     <configuration name="ContainsString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="strings.ContainsString" />
       <module name="Algorithms_hackerrank" />
@@ -233,12 +233,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="strings.Solution" />
+    <configuration name="InsertionSortTwo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sorting.InsertionSortTwo" />
       <module name="Algorithms_hackerrank" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="strings.*" />
+          <option name="PATTERN" value="sorting.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -274,11 +274,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InsertionSortTwo" />
         <item itemvalue="Application.InsertionSort" />
         <item itemvalue="Application.SortingIntro" />
         <item itemvalue="Application.TwoCharacters" />
         <item itemvalue="Application.ContainsString" />
-        <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -470,8 +470,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sorting/InsertionSortTwo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="60" column="29" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="29" />
+        <state relative-caret-position="506">
+          <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
