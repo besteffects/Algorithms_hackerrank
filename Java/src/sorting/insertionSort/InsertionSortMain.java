@@ -1,6 +1,6 @@
-package sorting;
+package sorting.insertionSort;
 
-public class InsertionSortThree {
+public class InsertionSortMain {
     public int[] insertionSort(int[] list) {
         int i; //outer loop
         int key;

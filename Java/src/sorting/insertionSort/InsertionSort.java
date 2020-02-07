@@ -1,4 +1,4 @@
-package sorting;
+package sorting.insertionSort;
 /*
 Sorting
 One common task for computers is to sort data. For example, people might want to see all their files on a computer

@@ -1,4 +1,4 @@
-package sorting;
+package sorting.insertionSort;
 /*
 Sample Challenge
 This is a simple challenge to get things started. Given a sorted array (arr) and a number (V), can you print the index
