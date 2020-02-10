@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cbdc212-9ea2-4cbb-bfbd-a90cfa71a597" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sorting/insertionSort/LoopInvariant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorting/insertionSort/LoopInvariant.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -74,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sorting/insertionSort/LoopInvariant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="49" column="18" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="26" />
+            <state relative-caret-position="245">
+              <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -308,7 +307,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="808" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="806" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06366237" />
@@ -320,7 +319,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32962447" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.048882682" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.34593838" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3977747" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -499,8 +498,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sorting/insertionSort/LoopInvariant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="49" column="18" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="26" />
+        <state relative-caret-position="245">
+          <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
         </state>
       </provider>
     </entry>
