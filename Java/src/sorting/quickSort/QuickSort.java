@@ -49,20 +49,41 @@ Sample Output
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class QuickSort {
 
     // Complete the quickSort function below.
     static int[] quickSort(int[] arr) {
-        int[] arr1 = new int[0];
-        return arr1;
-    }
+        int[] finalArray = new int[arr.length];
+        int pivot=arr[0];
+        int j=0;
+        for (int i=0;i<arr.length;i++) {
+            if (arr[i] < pivot) {
+                finalArray[j++] = arr[i];
+            }
+        }
+            for (int i=0;i<arr.length;i++) {
+                if (arr[i] == pivot) {
+                    finalArray[j++] = arr[i];
+                }
+            }
+            for (int i=0;i<arr.length;i++) {
+                if (arr[i] > pivot) {
+                    finalArray[j++] = arr[i];
+                }
+            }
+        System.out.println(Arrays.toString(finalArray));   //prints the resultant array
+
+        return finalArray;
+}
+
 
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+       // BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
@@ -80,16 +101,16 @@ public class QuickSort {
         int[] result = quickSort(arr);
 
         for (int i = 0; i < result.length; i++) {
-            bufferedWriter.write(String.valueOf(result[i]));
+           // bufferedWriter.write(String.valueOf(result[i]));
 
             if (i != result.length - 1) {
-                bufferedWriter.write(" ");
+           //     bufferedWriter.write(" ");
             }
         }
 
-        bufferedWriter.newLine();
+      //  bufferedWriter.newLine();
 
-        bufferedWriter.close();
+      //  bufferedWriter.close();
 
         scanner.close();
     }
