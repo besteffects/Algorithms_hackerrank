@@ -61,10 +61,13 @@ public class CountingSort {
 
     // Complete the countingSort function below.
     static int[] countingSort(int[] arr) {
+
+        //create a new array and fill it with zeros
         int count[] = new int[100];
         for (int i = 0; i < 100; i++) {
             count[i] = 0;
         }
+        // Increment the counter of index
         for (int i = 0; i < arr.length; i++) {
             count[arr[i]]++;
         }
