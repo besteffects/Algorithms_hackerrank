@@ -55,7 +55,24 @@ public class CountingSortTwo {
 
     // Complete the countingSort function below.
     static int[] countingSort(int[] arr) {
-        return arr;
+        //create a new array and fill it with zeros
+        int count[] = new int[100];
+        for (int i = 0; i < 100; i++) {
+            count[i] = 0;
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            count[arr[i]]++;
+        }
+        for (int i = 0; i <count.length ; i++) {
+            System.out.println(i);
+        }
+        for(int i=0;i<100;i++)
+        {
+            for(int j=0;j<arr[i];j++)
+                System.out.print(i+" ");
+        }
+        return count;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
@@ -77,6 +94,7 @@ public class CountingSortTwo {
         }
 
         int[] result = countingSort(arr);
+        System.out.println();
 
         for (int i = 0; i < result.length; i++) {
             bufferedWriter.write(String.valueOf(result[i]));
