@@ -57,22 +57,27 @@ public class CountingSortTwo {
     static int[] countingSort(int[] arr) {
         //create a new array and fill it with zeros
         int count[] = new int[100];
+        int finalArray[] = new int[100];
         for (int i = 0; i < 100; i++) {
             count[i] = 0;
         }
-
+        //array with quantity of digits
         for (int i = 0; i < arr.length; i++) {
             count[arr[i]]++;
         }
-        for (int i = 0; i <count.length ; i++) {
-            System.out.println(i);
+//        /Printing array with number of integers
+//        for (int i = 0; i <count.length ; i++) {
+//            System.out.println(i);
+//        }
+// sort array 
+        int index = 0;
+        for (int i = 0; i < count.length; i++) {
+            while (0 < count[i]) {
+                arr[index++] = i;
+                count[i]--;
+            }
         }
-        for(int i=0;i<100;i++)
-        {
-            for(int j=0;j<arr[i];j++)
-                System.out.print(i+" ");
-        }
-        return count;
+        return arr;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
