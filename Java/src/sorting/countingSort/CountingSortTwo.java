@@ -72,7 +72,7 @@ public class CountingSortTwo {
 // sort array 
         int index = 0;
         for (int i = 0; i < count.length; i++) {
-            while (0 < count[i]) {
+            while (count[i]>0) {
                 arr[index++] = i;
                 count[i]--;
             }
