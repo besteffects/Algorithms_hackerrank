@@ -66,7 +66,6 @@ public class CountingSortTwo {
             count[arr[i]]++;
         }
 //        /Printing array with number of integers
-//        for (int i = 0; i <count.length ; i++) {
 //            System.out.println(i);
 //        }
 // sort array 
