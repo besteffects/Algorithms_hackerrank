@@ -1,5 +1,7 @@
 package sorting;
 
+import java.util.Arrays;
+
 public class generalSortingTasks {
     /*
    Sorting is useful as the first step in many different tasks. The most common task is to make finding things easier,
@@ -39,10 +41,32 @@ Explanation 1
 (-470) - (-520) = 30 - (-20) = 50, which is the smallest difference.
      */
     public static void main(String[] args) {
-
+        closestNumbers(new int[]{-20, -3916237, -357920, -3620601, 7374819, -7330761, 30, 6246457, -6461594, 266854, -520, -470});
     }
 
-    public static void  closestNumbers(int [] arr){
+    static int[] closestNumbers(int[] arr) {
+//1 sort the array (insertion sort)
+        int n = arr.length;
+        int i; //outer loop
+        int key;
+        int j; //inner loop
+        int temp; //for storing values while swap
+        int[] finalArray;
+        for (i = 1; i < arr.length; i++) { //first element 0 is already sorted, we start from 1
+            key = arr[i]; //an item from 1 to the list.length
+            j = i - 1; //inner loop for i-1 to 0 (elements to the left). For example, when i=1 we compare with element with index 0
+            while (j >= 0 && key < arr[j]) {  //key reaches value that it is not longer smaller than
+                temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+                //swap
+                j--;
+            }
+        }
+//2 Find the smallest difference of array elements
 
+//3 Print array
+        System.out.println(Arrays.toString(arr));
+        return arr;
     }
 }
