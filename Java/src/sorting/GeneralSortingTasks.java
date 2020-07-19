@@ -1,8 +1,10 @@
 package sorting;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
-public class generalSortingTasks {
+public class GeneralSortingTasks {
     /*
    Sorting is useful as the first step in many different tasks. The most common task is to make finding things easier,
    but there are other uses as well. In this case, it will make it easier to determine which pair or pairs of elements
@@ -45,28 +47,26 @@ Explanation 1
     }
 
     static int[] closestNumbers(int[] arr) {
+        int min = Integer.MAX_VALUE; // Initialize difference as infinite
+        int index1=-1;
+        int index2=-1;
 //1 sort the array (insertion sort)
-        int n = arr.length;
-        int i; //outer loop
-        int key;
-        int j; //inner loop
-        int temp; //for storing values while swap
-        int[] finalArray;
-        for (i = 1; i < arr.length; i++) { //first element 0 is already sorted, we start from 1
-            key = arr[i]; //an item from 1 to the list.length
-            j = i - 1; //inner loop for i-1 to 0 (elements to the left). For example, when i=1 we compare with element with index 0
-            while (j >= 0 && key < arr[j]) {  //key reaches value that it is not longer smaller than
-                temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-                //swap
-                j--;
-            }
-        }
+        Arrays.sort(arr);
+        System.out.println("Sorted array: " +Arrays.toString(arr));
 //2 Find the smallest difference of array elements
+        for (int i = 0; i <arr.length ; ++i) {
+            for (int j = i+1; j <arr.length ; ++j) {
+                if (Math.abs(arr[i]-arr[j])<min){
+                    min=Math.abs(arr[i]-arr[j]);
+                    index1=i;
+                    index2=j;
+                    System.out.println(arr[index1]);
+                    System.out.println(arr[index2]);
+                }
+            }
 
-//3 Print array
-        System.out.println(Arrays.toString(arr));
+        }
+        System.out.println(min);
         return arr;
     }
 }
