@@ -5,7 +5,7 @@ The previous challenges covered Insertion Sort, which is a simple and intuitive 
  This challenge is a modified version of the algorithm that only addresses partitioning. It is implemented as follows:
 
 Step 1: Divide
-Choose some pivot element,p , and partition your unsorted array, arr, into three smaller arrays: left, right, and equal,
+Choose some pivot element,p , and quickSelect your unsorted array, arr, into three smaller arrays: left, right, and equal,
 where each element in left<p, each element in right>p, and each element in equal=p.
 
 For example: Assume arr=[5,7,4,3,8]
@@ -13,7 +13,7 @@ The pivot is at arr[0]=5
 arr is divided into left={4,3}, equal={5}, and right={7,8}.
 Putting them all together, you get {4,3,5,7,8}. Another valid solution is {3,4,5,8,7}.
 
-Given arr and p=arr[0], partition arr into left, right, and equal using the Divide instructions above. Then print each element
+Given arr and p=arr[0], quickSelect arr into left, right, and equal using the Divide instructions above. Then print each element
 in left followed by each element in equal, followed by each element in right on a single line. Your output should be space-separated
  and does not have to maintain ordering of the elements within the three categories.
 
