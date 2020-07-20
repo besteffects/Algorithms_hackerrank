@@ -1,8 +1,6 @@
 package sorting;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class GeneralSortingTasks {
     /*
@@ -41,32 +39,55 @@ Sample Output 1
 -520 -470 -20 30
 Explanation 1
 (-470) - (-520) = 30 - (-20) = 50, which is the smallest difference.
+
+Sample Input 2
+4
+5 4 3 2
+Sample Output 2
+2 3 3 4 4 5
      */
     public static void main(String[] args) {
         closestNumbers(new int[]{-20, -3916237, -357920, -3620601, 7374819, -7330761, 30, 6246457, -6461594, 266854, -520, -470});
     }
 
     static int[] closestNumbers(int[] arr) {
-        int min = Integer.MAX_VALUE; // Initialize difference as infinite
-        int index1=-1;
-        int index2=-1;
-//1 sort the array (insertion sort)
-        Arrays.sort(arr);
-        System.out.println("Sorted array: " +Arrays.toString(arr));
-//2 Find the smallest difference of array elements
-        for (int i = 0; i <arr.length ; ++i) {
-            for (int j = i+1; j <arr.length ; ++j) {
-                if (Math.abs(arr[i]-arr[j])<min){
-                    min=Math.abs(arr[i]-arr[j]);
-                    index1=i;
-                    index2=j;
-                    System.out.println(arr[index1]);
-                    System.out.println(arr[index2]);
-                }
+        int closestDifference = Integer.MAX_VALUE; // Initialize difference as infinite
+        int count = 0;
+//1 sort the array (insertion sort) or use Arrays.sort(arr) for sorting
+        for (int i = 1; i < arr.length; i++) { //first element 0 is already sorted, we start from 1
+            int key = arr[i]; //an item from 1 to the list.length
+            int j = i - 1; //inner loop for i-1 to 0 (elements to the left). For example, when i=1 we compare with element with index 0
+            while (j >= 0 && key < arr[j]) { //key reaches value that it is not longer smaller than
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+                //swap
+                j--;
             }
-
         }
-        System.out.println(min);
-        return arr;
+        System.out.println("Sorted array: " + Arrays.toString(arr));
+//2 Find the smallest difference of array elements
+        for (int k = 0; k < arr.length - 1; k++) {
+            if (Math.abs(arr[k + 1] - arr[k]) < closestDifference) {
+                closestDifference = Math.abs(arr[k + 1] - arr[k]);
+                count = 1; // calculating the number of int in a new array
+            } else if ((Math.abs(arr[k + 1] - arr[k])) == closestDifference) {
+                ++count;
+            }
+        }
+        System.out.println("Closest difference: " + closestDifference + "count: " + count);
+        //3 fill array with index1, index2
+        int[] finalArray = new int[count * 2];
+        int l = 0;
+        for (int k = 0; k < arr.length-1; k++) {
+            if (Math.abs(arr[k + 1] - arr[k]) == closestDifference) {
+                finalArray[l++] = arr[k];
+                finalArray[l++] = arr[k + 1];
+            }
+        }
+
+        System.out.println("Sorted array:  " + Arrays.toString(arr));
+        System.out.println("Final array with closest numbers: " + Arrays.toString(finalArray));
+        return finalArray;
     }
 }
