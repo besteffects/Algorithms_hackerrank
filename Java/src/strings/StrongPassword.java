@@ -59,57 +59,63 @@ The password isn't strong, but she can make it strong by adding a single digit.
 public class StrongPassword {
 
     // Complete the minimumNumber function below.
-    static void minimumNumber(String password) { //will return int
-
-        char [] numbers = {'0', '1','2','3','4','5','6','7','8','9'};
-        char [] lower_case = {'a','b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-        char [] upper_case = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
-        char[] special_characters = {'!','@','#','$','%','^','&','*','(','\'',')','-','+'};
+    static int minimumNumber(String password) { //will return int
+        int numberOfCharsToInput = 0;
+        char[] numbers = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
+        char[] lower_case = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+        char[] upper_case = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+        char[] special_characters = {'!', '@', '#', '$', '%', '^', '&', '*', '(', '\'', ')', '-', '+'};
         int numbersCount = 0;
         int lower_caseCount = 0;
         int upper_caseCount = 0;
         int specialCount = 0;
+
+        if (password.length() == 0) {
+            numberOfCharsToInput = 6;
+        }
         // Return the minimum number of characters to make the password strong
         char[] charPassword = password.toCharArray();
         for (int i = 0; i < charPassword.length; i++) {
-            for (int j = 0; j<numbers.length; j++) {
+            for (int j = 0; j < numbers.length; j++) {
                 if (numbers[j] == charPassword[i]) {
                     System.out.println("Number " + numbers[j] + " found in string " + password);
                     numbersCount++;
                 }
             }
         }
-        System.out.println("Numbers count: " +numbersCount);
+        System.out.println("Numbers count: " + numbersCount);
 
         for (int i = 0; i < charPassword.length; i++) {
-            for (int j = 0; j<lower_case.length; j++) {
+            for (int j = 0; j < lower_case.length; j++) {
                 if (lower_case[j] == charPassword[i]) {
                     System.out.println("LowerCase count " + lower_case[j] + " found in string " + password);
                     lower_caseCount++;
                 }
             }
         }
-        System.out.println("LowerCase count: " +lower_caseCount);
+        System.out.println("LowerCase count: " + lower_caseCount);
 
         for (int i = 0; i < charPassword.length; i++) {
-            for (int j = 0; j<upper_case.length; j++) {
+            for (int j = 0; j < upper_case.length; j++) {
                 if (upper_case[j] == charPassword[i]) {
                     System.out.println("LowerCase count " + upper_case[j] + " found in string " + password);
                     upper_caseCount++;
                 }
             }
         }
-        System.out.println("LowerCase count: " +upper_caseCount);
+        System.out.println("LowerCase count: " + upper_caseCount);
 
         for (int i = 0; i < charPassword.length; i++) {
-            for (int j = 0; j<special_characters.length; j++) {
+            for (int j = 0; j < special_characters.length; j++) {
                 if (special_characters[j] == charPassword[i]) {
                     System.out.println("LowerCase count " + special_characters[j] + " found in string " + password);
                     specialCount++;
                 }
             }
         }
-        System.out.println("Special chars count: " +specialCount);
+        System.out.println("Special chars count: " + specialCount);
+
+        return numberOfCharsToInput;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
