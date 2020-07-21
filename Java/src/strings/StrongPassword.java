@@ -59,19 +59,22 @@ The password isn't strong, but she can make it strong by adding a single digit.
 public class StrongPassword {
 
     // Complete the minimumNumber function below.
-    static int minimumNumber(String password) { //will return int
-        int numberOfCharsToInput = 0;
+    static int minimumNumber(int n, String password) { //will return int
+        int numberOfCharsLeftToInput = 0;
         char[] numbers = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
         char[] lower_case = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
         char[] upper_case = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
         char[] special_characters = {'!', '@', '#', '$', '%', '^', '&', '*', '(', '\'', ')', '-', '+'};
+
         int numbersCount = 0;
         int lower_caseCount = 0;
         int upper_caseCount = 0;
         int specialCount = 0;
 
+        int maxNumber = 6;
+
         if (password.length() == 0) {
-            numberOfCharsToInput = 6;
+            numberOfCharsLeftToInput = maxNumber;
         }
         // Return the minimum number of characters to make the password strong
         char[] charPassword = password.toCharArray();
@@ -114,15 +117,17 @@ public class StrongPassword {
             }
         }
         System.out.println("Special chars count: " + specialCount);
+        int inputtedSymbols = lower_caseCount + upper_caseCount + specialCount + numbersCount;
 
-        return numberOfCharsToInput;
+
+        return numberOfCharsLeftToInput;
     }
 
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
 
-        minimumNumber("Ab1");
+        minimumNumber(7, "Ab1");
 //        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 //
 //        int n = scanner.nextInt();
