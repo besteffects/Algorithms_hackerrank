@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cbdc212-9ea2-4cbb-bfbd-a90cfa71a597" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/strings/StrongPassword.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/strings/StrongPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/strings/StrongPassword.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/strings/StrongPassword.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="69" />
+            <state relative-caret-position="193">
+              <caret line="86" column="55" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,7 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="489" />
     <option name="y" value="23" />
     <option name="width" value="951" />
@@ -235,7 +235,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FindMedian_quickSelect">
+  <component name="RunManager" selected="Application.StrongPassword">
     <configuration name="CountSortFull" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sorting.countingSort.CountSortFull" />
       <module name="Algorithms_hackerrank" />
@@ -288,12 +288,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSortWithList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sorting.quickSort.QuickSortWithList" />
+    <configuration name="StrongPassword" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="strings.StrongPassword" />
       <module name="Algorithms_hackerrank" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sorting.quickSort.*" />
+          <option name="PATTERN" value="strings.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -303,11 +303,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StrongPassword" />
         <item itemvalue="Application.FindMedian_quickSelect" />
         <item itemvalue="Application.GeneralSortingTasks" />
         <item itemvalue="Application.InsertionSortTwo" />
         <item itemvalue="Application.CountSortFull" />
-        <item itemvalue="Application.QuickSortWithList" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +325,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="489" y="23" width="951" height="800" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="800" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.40921053" />
@@ -337,7 +337,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32863188" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49928468" weight="0.34920636" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49928468" visible="true" weight="0.34887007" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3568406" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -345,7 +345,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32485875" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5007153" side_tool="true" weight="0.255911" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286517" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.3036723" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3036723" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -619,8 +619,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/strings/StrongPassword.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="63" column="8" lean-forward="true" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="69" />
+        <state relative-caret-position="193">
+          <caret line="86" column="55" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

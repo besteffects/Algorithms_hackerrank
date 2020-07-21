@@ -65,19 +65,51 @@ public class StrongPassword {
         char [] lower_case = {'a','b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
         char [] upper_case = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
         char[] special_characters = {'!','@','#','$','%','^','&','*','(','\'',')','-','+'};
-        int numbersNumber = 0;
-        int lower_caseNumber = 0;
-        int upper_caseNumber = 0;
-        int specialNumber = 0;
+        int numbersCount = 0;
+        int lower_caseCount = 0;
+        int upper_caseCount = 0;
+        int specialCount = 0;
         // Return the minimum number of characters to make the password strong
         char[] charPassword = password.toCharArray();
         for (int i = 0; i < charPassword.length; i++) {
             for (int j = 0; j<numbers.length; j++) {
                 if (numbers[j] == charPassword[i]) {
-                    System.out.println("Character " + numbers[j] + " found in string " + password);
+                    System.out.println("Number " + numbers[j] + " found in string " + password);
+                    numbersCount++;
                 }
             }
         }
+        System.out.println("Numbers count: " +numbersCount);
+
+        for (int i = 0; i < charPassword.length; i++) {
+            for (int j = 0; j<lower_case.length; j++) {
+                if (lower_case[j] == charPassword[i]) {
+                    System.out.println("LowerCase count " + lower_case[j] + " found in string " + password);
+                    lower_caseCount++;
+                }
+            }
+        }
+        System.out.println("LowerCase count: " +lower_caseCount);
+
+        for (int i = 0; i < charPassword.length; i++) {
+            for (int j = 0; j<upper_case.length; j++) {
+                if (upper_case[j] == charPassword[i]) {
+                    System.out.println("LowerCase count " + upper_case[j] + " found in string " + password);
+                    upper_caseCount++;
+                }
+            }
+        }
+        System.out.println("LowerCase count: " +upper_caseCount);
+
+        for (int i = 0; i < charPassword.length; i++) {
+            for (int j = 0; j<special_characters.length; j++) {
+                if (special_characters[j] == charPassword[i]) {
+                    System.out.println("LowerCase count " + special_characters[j] + " found in string " + password);
+                    specialCount++;
+                }
+            }
+        }
+        System.out.println("Special chars count: " +specialCount);
     }
 
     private static final Scanner scanner = new Scanner(System.in);
