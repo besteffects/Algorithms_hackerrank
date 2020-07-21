@@ -118,7 +118,11 @@ public class StrongPassword {
         }
         System.out.println("Special chars count: " + specialCount);
         int inputtedSymbols = lower_caseCount + upper_caseCount + specialCount + numbersCount;
-
+//        if ((inputtedSymbols>(6-n))) {
+//            numberOfCharsLeftToInput=inputtedSymbols;
+//        } else {
+//            numberOfCharsLeftToInput=(6-n);
+//        }
 
         return numberOfCharsLeftToInput;
     }
